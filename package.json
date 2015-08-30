@@ -1,0 +1,26 @@
+{
+  "name": "Sushi-Gram",
+  "version": "1.0.0",
+  "description": "A sushi feed",
+  "main": "index.js",
+  "scripts": {
+    "postinstall" : "bower install",
+    "start": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvenw/Sushi-Gram.git"
+  },
+  "keywords": [
+    "sushi"
+  ],
+  "author": "Alven Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvenw/Sushi-Gram/issues"
+  },
+  "dependencies": {
+    "express": "~4.13.3",
+    "react": "~0.13.3"
+  }
+}
