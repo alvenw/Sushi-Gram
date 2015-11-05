@@ -1,34 +1,35 @@
 // App component - represents the whole app
 App = React.createClass({
-	getIntialState() {
-		return {
-			sushi: [
-				'tamago',
-				'sake',
-				'maguro',
-				'hamachi',
-				'ebi',
-				'unagi',
-				'tako',
-				'ika',
-				'ikura'
-			],
-		};
-	},
-
 	render() {
-		// var buttons = sushi.map(function(element) {
-		// 	return (
-		// 		<button name={element}>{element}</button>
-		// 	)
-		// }.bind(this));
-		// return (
-		// 	{buttons}
-		// )	
-		return this.state.sushi.map(function(element) {
-			(
-				<button name={element}>button</button>
-			)
-		});
+		return (
+			<div>
+				{sushi.map(function(element, index) {
+					return (
+						<button style = {button} name={element}>{element}</button>
+					);
+				}, this)}
+			</div>
+		);
 	}
 });
+
+var sushi =  
+[
+	'tamago',
+	'sake',
+	'maguro',
+	'hamachi',
+	'ebi',
+	'unagi',
+	'tako',
+	'ika',
+	'ikura'
+];
+
+var button = {
+	backgroundColor: '#FFFFFFF',
+	width: '100px',
+	height: '50px',
+	borderRadius: '10px',
+	margin: '0 auto'
+}
