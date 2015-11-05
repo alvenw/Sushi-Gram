@@ -1,11 +1,13 @@
 // App component - represents the whole app
+
+
 App = React.createClass({
 	render() {
 		return (
 			<div>
 				{sushi.map(function(element, index) {
 					return (
-						<button style = {button} name={element}>{element}</button>
+						<SushiButton styles = {button} sushis = {element}/>
 					);
 				}, this)}
 			</div>
